@@ -7,7 +7,7 @@ import numpy as np
 
 # Function to get the current BTC/USDT price from Binance
 def get_current_price():
-    url = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT"
+    url = "https://api.binance.us/api/v3/ticker/price?symbol=BTCUSDT"
     try:
         response = requests.get(url)
         response.raise_for_status()  # Raise an error for bad status codes
